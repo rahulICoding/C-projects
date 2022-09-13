@@ -2,6 +2,10 @@
 //9/9/2022
 //Guessing Game
 //This game makes you guess a number and count how many times you guessed. Have fun!
+//3 rules of C++
+//1. No Global variables
+//2. No strings. Not ever. (You can use cstrings/character arrays, and the cstring and cctype libraries are okay. In fact, I recommend using strcmp and strlen in your projects.)
+//3. You should include <iostream>, not stdio. (This applies more to C programmers.)
 
 #include <iostream>
 #include <cstring>
@@ -19,7 +23,7 @@ int main()
     int guessNum = 0;
     int count = 0;
     char playAgain;
-    cout << "This is guessing game. Guess the number from 0-100." << endl;
+    cout << "This is guessing game. Guess the number from 0-100" << endl;
     while (stillPlaying == true) { //actual guessing part of game
       cin >> guessNum; //taking in a number from input
       if (guessNum > num) { //comparing if too high
@@ -48,4 +52,4 @@ int main()
     }
   }
   return 0;
-}cd 
+}
