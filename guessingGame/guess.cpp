@@ -35,6 +35,7 @@ int main()
 	count++;
       }
       if (num == guessNum) { //when equal end game
+	count++;
 	cout << "You guessed correctly and it took you ";
 	cout << count;
 	cout << " guesses" << endl;
