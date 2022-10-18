@@ -190,7 +190,7 @@ void playAgain(char board[3][3], bool& keepPlaying) { //check if they want to pl
   cin.get(decision);
   cin.get();
 
-  if (decision == 'Y' || decision = 'y') {
+  if ((decision = 'Y') || (decision = 'y')) {
     cout << "Next Game" << endl;
     clearBoard(board);
     
